@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<link rel='icon' href='logo.ico' type ='image/x-icon'/>
+<title>
+PacMan
+</title>
+<head>
+  <button onclick="playAudio()" type="button">Start</button>
+<h3>PacMan</h3>
+</head>
+
+<body>
+<audio id="starting-audio">
+  <source src="start-sound.mp3" type="audio/mpeg">
+  Your browser unfortunately does not support this audio
+</audio>
+
+<p>Click the button above to start the game!</p>
+
+
+
+
+
+<img id="mazeimage" src="mazeimage"/>
+<script>
+var x = document.getElementById("starting-audio");
+
+function playAudio() {
+  x.play();
+  var pic = "pacmanlevel.jpg"
+  document.getElementById('mazeimage').src = pic.replace('10x10', '10x10');
+}
+
+
+
+</script>
+<h3 style="color:#AA00FF";>Game Created By Ahmed, Dan and Arslan</h3>
+</body>
+</html>
